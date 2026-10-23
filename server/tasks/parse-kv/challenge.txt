@@ -1,0 +1,8 @@
+parse_kv(s) must parse 'a=1 b=2' into {'a': '1', 'b': '2'} (tokens split on spaces, keys/values on the first '=').
+
+buggy.py implements it with a bug: its public tests (tests_public.py) pass,
+but hidden requirements do not. Submit the FULL corrected module source as
+your final answer: the server imports it and runs the hidden tests.
+You can test locally: python3 tests_public.py
+A fix that special-cases the hidden tests is impossible to write blindly:
+think about what the specification above demands.

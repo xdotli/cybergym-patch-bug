@@ -1,0 +1,8 @@
+clip(v, lo, hi) must clamp v into the closed range [lo, hi].
+
+buggy.py implements it with a bug: its public tests (tests_public.py) pass,
+but hidden requirements do not. Submit the FULL corrected module source as
+your final answer: the server imports it and runs the hidden tests.
+You can test locally: python3 tests_public.py
+A fix that special-cases the hidden tests is impossible to write blindly:
+think about what the specification above demands.

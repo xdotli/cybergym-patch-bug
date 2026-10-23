@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: BSD-3-Clause
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openenv-cybergym-patch-bug"
+version = "1.0.0"
+description = "cybergym_patch_bug: OpenEnv vulnerability-reproduction environment (crash differential)"
+requires-python = ">=3.10"
+dependencies = [
+    "openenv @ git+https://github.com/meta-pytorch/OpenEnv.git@86a180ede21e044f7929b9a7783ad83aa67d83a3",
+    "fastapi>=0.116.0",
+    "uvicorn>=0.24.0",
+]

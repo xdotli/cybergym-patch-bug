@@ -1,0 +1,36 @@
+{
+  "env": "cybergym-patch-bug",
+  "description": "Defensive fixing: each task has a buggy module whose public tests pass; the hidden tests encode the specification the bug breaks. The submitted module source is imported and graded server-side.",
+  "tasks": [
+    {
+      "task_id": "sum-upto",
+      "split": "train",
+      "verify": "hidden-tests"
+    },
+    {
+      "task_id": "average-float",
+      "split": "train",
+      "verify": "hidden-tests"
+    },
+    {
+      "task_id": "clip-upper",
+      "split": "train",
+      "verify": "hidden-tests"
+    },
+    {
+      "task_id": "parse-kv",
+      "split": "train",
+      "verify": "hidden-tests"
+    },
+    {
+      "task_id": "count-vowels",
+      "split": "train",
+      "verify": "hidden-tests"
+    },
+    {
+      "task_id": "rotate-left",
+      "split": "train",
+      "verify": "hidden-tests"
+    }
+  ]
+}
